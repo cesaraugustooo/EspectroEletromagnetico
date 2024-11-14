@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ondas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+
+</head>
+<body>
+    <div id="background"></div>
+    <div class="root">
+        <main>
+            <section class="all"> 
+                <i class="fa-solid fa-chevron-left" onclick="VoltarEsquerda()"></i>  
+                <section >
+                    <div class="modos">
+                        <a onclick="open_dialog()" id="nivelLink" href="#" style="border-style: none;text-decoration: none;color: #ffffff;cursor: pointer;"><h1 id="h1">Onda de radio</h1></a>
+                    </div>
+                </section>
+                <i class="fa-solid fa-chevron-right" onclick="PassarDireita(),color()"></i>
+            </section>
+            
+        </main>
+    </div>
+    <dialog id="abc">
+        <i class="fa-solid fa-x fechar" onclick="close_dialog()"></i>
+        
+    </dialog>
+    <script src="js/script.js"></script>
+</body>
+</html>
