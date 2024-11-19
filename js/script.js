@@ -114,6 +114,8 @@ function open_dialog(estado = 'introducao') {
         dialog.style.background = 'linear-gradient(to right, #0000FFd3, #4B0082d3, #8A2BE2d3)';
     } else if (estado === 'introducao') {
         dialog.style.backgroundColor = '#dd64b9c7';
+    } else if(estado === 'ultravioleta'){
+        dialog.style.background = 'linear-gradient(to right,#67466d,#642e6d,#60116e)'
     }
 
     dialog.showModal();
