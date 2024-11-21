@@ -14,7 +14,6 @@ function color(){
 function PassarDireita() {
     let div = document.getElementsByClassName('modos')[0];
     let h1 = document.getElementById('h1');
-    let nivelLink = document.getElementById('nivelLink');
     div.classList.add('animacao');
 
     setTimeout(() => {
@@ -23,7 +22,7 @@ function PassarDireita() {
             h1.innerText = `Microondas`;
             estado = 'Microondas';
         } else if (estado === 'Microondas') {
-            div.style.background = 'linear-gradient(to right,#b55464,#a14958,#4C1C24)'
+            div.style.background = 'linear-gradient(to right,#b55464,#a14958,#4C1C24)';
             h1.innerText = `Ondas Baixas`;
             estado = 'baixa';
         } else if (estado === 'baixa') {
@@ -32,14 +31,18 @@ function PassarDireita() {
             estado = 'Infravermelho';
         } else if (estado === 'Infravermelho') {
             div.style.background = 'linear-gradient(to right, #FF0000, #FFA500, #FFFF00, #00FF00, #0000FF, #4B0082, #8A2BE2)';
-            h1.innerText = `Luz visivel`;
-            estado = 'Luz visivel';
-        }else if(estado == 'Luz visivel'){
+            h1.innerText = `Luz visível`;
+            estado = 'Luz visível';
+        } else if (estado === 'Luz visível') {
             div.style.background = 'linear-gradient(to right,#67466d,#642e6d,#60116e)';
-            h1.innerText = `ultravioleta`;
+            h1.innerText = `Ultravioleta`;
             estado = 'ultravioleta';
+        } else if (estado === 'ultravioleta') {
+            div.style.background = 'linear-gradient(to right, rgb(69, 68, 68), rgb(46, 46, 46), rgb(42, 42, 42))';
+            h1.innerText = `Raio-X`;
+            estado = 'raiox';
         } else {
-            h1.innerText = `Ondas de radio`;
+            h1.innerText = `Ondas de rádio`;
             div.style.background = 'linear-gradient(to right,#6b0e7c,#6c117c,#3F0549)';
             estado = 'introducao';
         }
@@ -60,11 +63,20 @@ function VoltarEsquerda() {
     div.classList.add('animacaoEsquerda');
 
     setTimeout(() => {
-        if (estado === 'ultravioleta') {
+        if (estado === 'introducao') { 
+            div.style.background = 'linear-gradient(to right, rgb(69, 68, 68), rgb(46, 46, 46), rgb(42, 42, 42))';
+            h1.innerText = `Raio-X`;
+            estado = 'raiox';
+        }
+        else if(estado === 'raiox') {
+            div.style.background = 'linear-gradient(to right,#67466d,#642e6d,#60116e)';
+            h1.innerText = `Ultravioleta`;
+            estado = 'ultravioleta';
+        } else if (estado === 'ultravioleta') {
             div.style.background = 'linear-gradient(to right, #FF0000, #FFA500, #FFFF00, #00FF00, #0000FF, #4B0082, #8A2BE2)';
-            h1.innerText = `Luz visivel`;
-            estado = 'Luz visivel';
-        } else if (estado === 'Luz visivel') {
+            h1.innerText = `Luz visível`;
+            estado = 'Luz visível';
+        } else if (estado === 'Luz-visivel') {
             div.style.background = 'linear-gradient(to right,#e45252,#d12e2e,#990000)';
             h1.innerText = `Infravermelho`;
             estado = 'Infravermelho';
@@ -95,6 +107,7 @@ function VoltarEsquerda() {
     }, 500);
 }
 
+
 function open_dialog(estado = 'introducao') {
     const modos = document.getElementsByClassName('modos')[0];
     const all = document.getElementsByClassName('all')[0];
@@ -103,6 +116,11 @@ function open_dialog(estado = 'introducao') {
     all.style.display = 'none';
     
     const dialog = document.getElementById(estado); 
+    
+    if (!dialog) {
+        console.error(`Dialog com o ID "${estado}" não encontrado.`);
+        return;
+    }
 
     if (estado === 'Microondas') {
         dialog.style.backgroundColor = '#006064d3';
@@ -110,7 +128,7 @@ function open_dialog(estado = 'introducao') {
         dialog.style.backgroundColor = '#4C1C24d3';
     } else if (estado === 'Infravermelho') {
         dialog.style.backgroundColor = '#990000d3';
-    } else if (estado === 'Luz visivel') {
+    } else if (estado === 'Luz-visivel') {
         dialog.style.background = 'linear-gradient(to right, #0000FFd3, #4B0082d3, #8A2BE2d3)';
     } else if (estado === 'introducao') {
         dialog.style.backgroundColor = '#dd64b9c7';
