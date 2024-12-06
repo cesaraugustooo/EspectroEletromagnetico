@@ -18,18 +18,304 @@
                 <i class="fa-solid fa-chevron-left" onclick="VoltarEsquerda()"></i>  
                 <section >
                     <div class="modos">
-                        <a onclick="open_dialog()" id="nivelLink" href="#" style="border-style: none;text-decoration: none;color: #ffffff;cursor: pointer;"><h1 id="h1">Onda de radio</h1></a>
+                        <a onclick="open_dialog(estado)" id="nivelLink" href="#" style="border-style: none;text-decoration: none;color: #ffffff;cursor: pointer;"><h1 id="h1">Ondas de radio</h1></a>
                     </div>
                 </section>
-                <i class="fa-solid fa-chevron-right" onclick="PassarDireita(),color()"></i>
+                <i class="fa-solid fa-chevron-right" onclick="PassarDireita()"></i>
             </section>
             
         </main>
     </div>
-    <dialog id="abc">
+    <dialog id="introducao" class="abc">
         <i class="fa-solid fa-x fechar" onclick="close_dialog()"></i>
-        
+        <h2 style="color: black;">Ondas de Rádio</h2>
+        <div class="topic">
+            <p><strong>Que ondas são essas ondas:</strong> As ondas de rádio são um tipo de radiação eletromagnética, assim como a luz visível, mas com características diferentes, principalmente em relação ao comprimento de onda e frequência. Elas possuem comprimentos de onda que variam de alguns metros até milhares de quilômetros, e suas frequências variam de 3 Hz a 300 GHz.</p>
+            <div class="image-container">
+                <img src="./images/radioFrequencia.png" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            <p><strong>Como funcionam:</strong>As ondas de rádio são geradas por transmissores, que criam sinais eletromagnéticos ao variar a corrente elétrica. Esses sinais viajam através do ar ou do espaço e são recebidos por antenas em dispositivos receptores, como rádios e televisores. </p>
+            <div class="image-container">
+                <img src="./images/transmissão_ondas_de_radio.jpg" alt="Ondas de rádio sendo emitidas por uma antena">
+                <img src="./images/transmissaoRadio2.png" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            <p><strong>Porque é utilizada:</strong>As ondas de rádio são amplamente usadas devido à sua capacidade de viajar longas distâncias, atravessar obstáculos como prédios e montanhas, e sua eficiência em comunicação sem fio. Além disso, elas são de baixo custo, comparadas a outras tecnologias de transmissão, como cabos ou fibras ópticas. Isso as torna ideais para sistemas de telecomunicações e para tecnologias como rádio, televisão, telefonia móvel, Wi-Fi e Bluetooth.
+
+            </p>
+            <div class="image-container">
+                <img src="./images/Leonardo_Phoenix_Create_an_image_representing_the_importance_o_2.jpg" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            <p><strong>Onde encontramos:</strong> As ondas de rádio estão presentes em uma variedade de dispositivos que usamos diariamente. Elas são usadas em rádios AM e FM para transmitir sinais de áudio, em televisores para receber sinais de vídeo, em celulares para chamadas e navegação por dados, e em Wi-Fi e Bluetooth para comunicação sem fio entre dispositivos. Além disso, elas são essenciais em satélites de comunicação, radares, sistemas de navegação em veículos e aparelhos de comunicação marítima e aérea, facilitando a conectividade e a troca de informações em várias plataformas.</p>
+
+            <div class="image-container">
+                <img src="./images/high-angle-wi-fi-router-with-vacuum-cleaner.jpg" alt="Ondas de rádio sendo emitidas por uma antena">
+                <img src="./images/8ssr_87rf_220712.jpg" alt="Ondas de rádio sendo emitidas por uma antena">
+                <img src="./images/ressonancia_magnetica.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            
+        </div>
     </dialog>
+
+
+
+
+    <dialog  id="Microondas" class="abc">
+        <i class="fa-solid fa-x fechar" style="color: white;" onclick="close_dialog(estado)"></i>
+        <h2 style="color: rgb(255, 255, 255);">Micro ondas</h2>
+        <div class="topic">
+            <p><strong>Que ondas são essas ondas:</strong> As micro-ondas são um tipo de radiação eletromagnética com comprimentos de onda menores que as ondas de rádio, mas maiores que as radiações infravermelhas. Elas possuem frequências que variam de cerca de 1 GHz (gigahertz) a 300 GHz e são amplamente usadas em uma variedade de aplicações tecnológicas e científicas. </p>
+            <div class="image-container">
+                <img src="./images/microondas.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            <p><strong>Como funcionam:</strong>As micro-ondas funcionam com a geração de sinais eletromagnéticos a partir de um dispositivo chamado magnetron (em fornos micro-ondas, por exemplo). Esse dispositivo emite radiação em frequências específicas, que então são direcionadas para um objeto ou ambiente. As micro-ondas interagem com as moléculas de água e outros compostos presentes no alimento ou no objeto, fazendo com que eles vibrem e aqueçam. Essa vibração gera calor, que é o princípio do funcionamento dos fornos de micro-ondas.  </p>
+            <div class="image-container">
+                <img src="./images/microondas2.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+                <img src="./images/emissao.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            <p><strong>Porque é utilizada:</strong>As micro-ondas são amplamente utilizadas porque oferecem uma maneira eficiente e rápida de transmitir e processar energia. Uma das principais razões para o uso de micro-ondas é sua capacidade de aquecer alimentos rapidamente, o que é uma das funções principais dos fornos de micro-ondas. Além disso, elas são essenciais em comunicação, como em radares e satélites, porque podem atravessar a atmosfera e cobrir grandes distâncias.
+
+            </p>
+            <div class="image-container">
+                <img src="./images/frango.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            <p><strong>Onde encontramos:</strong> O exemplo mais comum é o forno de micro-ondas, que usa essa radiação para aquecer alimentos. Em telecomunicações, as micro-ondas são usadas em radios, satélites de comunicação e antenas de transmissão, permitindo a troca de informações por longas distâncias sem a necessidade de cabos. Elas também são utilizadas em radares, como os usados em aviões e navios para detecção de objetos e controle do tráfego aéreo e marítimo, e ainda em tecnologias como Wi-Fi e Bluetooth para comunicação sem fio entre dispositivos.</p>
+
+            <div class="image-container">
+                <img src="./images/radar.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+                <img src="./images/espectro.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            
+        </div>
+    </dialog>
+
+
+
+    <dialog  id="baixa" class="abc">
+        <i class="fa-solid fa-x fechar" onclick="close_dialog(estado)"></i>
+        <h2 style="color: black;">Ondas Baixas</h2>
+        <div class="topic">
+            <p><strong>Que ondas são essas ondas:</strong> Ondas Baixas, também chamadas de ondas de frequência extremamente baixa (ELF) ou muito baixa (VLF), são ondas eletromagnéticas com frequências entre 3 e 30 kHz. Elas têm comprimentos de onda muito longos, que podem variar de 10 km a 100 km.
+
+            </p>
+            <div class="image-container">
+                <img src="./images/propiedades_ondas.png" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            <p><strong>Como funcionam:</strong>Ondas Baixas se propagam seguindo a curvatura da Terra, tornando-as ideais para comunicações de longa distância. Sua baixa frequência permite que elas penetrem em meios como água e solo.
+
+                Transmissão: São geradas por transmissores especializados que produzem ondas em baixa frequência.
+                Recepção: Receptores captam essas ondas e convertem os sinais eletromagnéticos em mensagens utilizáveis. </p>
+            <div class="image-container">
+                <img src="./images/baixa_frequencia.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            <p><strong>Porque é utilizada:</strong>Longo alcance: Elas podem viajar por milhares de quilômetros sem perda significativa de qualidade.
+                Penetração: Capazes de atravessar água, rochas e outros obstáculos.
+                Confiabilidade: Funcionam mesmo em condições extremas, como debaixo d'água ou em áreas remotas.
+                Comunicações especiais: Essenciais para submarinos e sistemas militares.
+
+            </p>
+            <div class="image-container">
+                <img src="./images/baixassssssss.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            <p><strong>Onde encontramos:</strong>Na natureza:
+
+                Durante tempestades, relâmpagos podem gerar ondas ELF.
+                Em atividades sísmicas, liberando frequências muito baixas.
+                Em aplicações tecnológicas:
+                
+                Comunicações submarinas: Submarinos utilizam ondas ELF para receber sinais mesmo em grandes profundidades.
+                Sistemas de navegação: Radionavegação usa VLF para localizar embarcações e aeronaves.
+                Sismologia: Utilizadas para estudar movimentos da Terra.
+                No cotidiano:
+                
+                Relógios e sistemas de sincronização global, que dependem de ondas ELF/VLF para precisão.</p>
+
+            <div class="image-container">
+                <img src="./images/transmissor.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            
+        </div>
+    </dialog>
+    
+    <dialog  id="Infravermelho" class="abc">
+        <i style="color: white;" class="fa-solid fa-x fechar" onclick="close_dialog(estado)"></i>
+        <h2 style="color: rgb(255, 255, 255);">Infravermelho</h2>
+        <div class="topic">
+            <p><strong>Que ondas são essas ondas:</strong>A radiação infravermelha é um tipo de onda eletromagnética situada no espectro entre as micro-ondas e a luz visível. Ela possui comprimentos de onda que variam de 700 nanômetros (nm) a 1 milímetro (mm), e suas frequências estão entre 300 GHz e 430 THz. Embora invisível ao olho humano, é percebida como calor, sendo emitida por qualquer objeto com temperatura acima do zero absoluto.
+
+            </p>
+            <div class="image-container">
+                <img src="./images/cachorro.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            <p><strong>Como funcionam:</strong>As ondas infravermelhas são emitidas por objetos quentes, como corpos, lâmpadas ou o sol, devido à energia térmica. Quando absorvidas por outro objeto, essas ondas aumentam sua temperatura. Dispositivos como câmeras térmicas e sensores infravermelhos detectam essa radiação, traduzindo-a em imagens ou sinais. No controle remoto, sinais infravermelhos codificados são usados para transmitir comandos aos aparelhos.
+
+            </p>
+            <div class="image-container">
+                <img src="./images/corpo.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+                <img src="./images/transmissaoRadio2.png" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            <p><strong>Porque é utilizada:</strong>As ondas infravermelhas têm uma ampla aplicação por sua capacidade de transmitir energia térmica de forma eficiente e precisa. São usadas em comunicação sem fio de curto alcance (controles remotos), termografia (medição de temperatura sem contato), segurança (sensores de movimento), medicina (tratamento de dores e inflamações), além de serem fundamentais para a astronomia, permitindo observar estrelas e galáxias através de poeiras cósmicas.
+
+            </p>
+            <div class="image-container">
+                <img src="./images/corpo2.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            <p><strong>Onde encontramos:</strong> Encontramos ondas infravermelhas em diversas tecnologias do cotidiano, como controles remotos de TV, câmeras de segurança com visão noturna, dispositivos médicos de diagnóstico por imagem e tratamentos terapêuticos. Também estão presentes em sistemas de aquecimento, como aquecedores elétricos, e em processos industriais que utilizam fornos infravermelhos. Além disso, a radiação infravermelha é naturalmente emitida pelo sol e captada em estudos climáticos e astronômicos.</p>
+
+            <div class="image-container">
+                <img src="./images/comparacao.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+                <img src="./images/mao.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+                <img src="./images/alunos.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            
+        </div>
+    </dialog>
+
+
+
+    <dialog style="background: linear-gradient(to right, #FFFF00, #00FF00, #0000FF, #4B0082, #8A2BE2);color: black;"  id="Luz visível" class="abc">
+        <i style="color: #ffffff;" class="fa-solid fa-x fechar" onclick="close_dialog(estado)"></i>
+        <h2 style="color: rgb(255, 255, 255);">Luz visivel</h2>
+        <div class="topic">
+            <p style="color: #ffffff;"><strong>Que ondas são essas ondas:</strong> A luz visível é a faixa do espectro eletromagnético que o olho humano consegue detectar, compreendendo comprimentos de onda entre 400 nm (violeta) e 700 nm (vermelho). É essa luz que nos permite enxergar cores e formar imagens do mundo ao nosso redor.   </p>
+            <div class="image-container">
+                <img src="./images/luz_visivel.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            <p style="color: #ffffff;"><strong>Como funcionam:</strong>Fonte de luz: A luz visível é emitida por fontes naturais, como o Sol, e artificiais, como lâmpadas.
+                Interação com objetos: Quando atinge um objeto, parte da luz é absorvida e parte é refletida. As cores que vemos dependem da luz refletida. Por exemplo, objetos vermelhos refletem principalmente luz de comprimento de onda na faixa do vermelho.
+                Captação pelo olho humano:
+                A luz refletida pelos objetos entra no olho através da pupila.
+                A retina converte a luz em sinais elétricos.
+                Esses sinais são interpretados pelo cérebro como cores e formas.</p>
+            <div class="image-container">
+                <img src="./images/cores.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            <p style="color: #ffffff;"><strong>Porque é utilizada:</strong>Iluminação e Visão: Essencial para que possamos enxergar e realizar atividades diárias.
+                Comunicação: Utilizada em fibras ópticas para transmitir dados de forma rápida e eficiente.
+                Fotossíntese: Plantas utilizam luz visível, especialmente as faixas vermelha e azul, para produzir energia por meio da fotossíntese.
+                Tecnologia: Em telas, LEDs e lasers para aplicações científicas e industriais.
+
+            </p>
+            <div class="image-container">
+                <img src="./images/olhos.png" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            <p style="color: #ffffff;"><strong >Onde encontramos:</strong> Na Natureza:
+
+                Sol: Principal fonte de luz visível na Terra.
+                Fogo: Produz luz visível como resultado de combustão.
+                Bioluminescência: Certos organismos, como vaga-lumes e seres marinhos, emitem luz visível.
+                No Cotidiano:
+                
+                Lâmpadas e LEDs: Iluminam ambientes internos e externos.
+                Dispositivos eletrônicos: Monitores, TVs e smartphones emitem luz visível para exibir imagens.
+                Em Aplicações Científicas:
+                
+                Astronomia: Telescópios captam luz visível de estrelas e galáxias para estudar o universo.
+                Microscopia: Utiliza luz visível para visualizar pequenos detalhes em amostras.
+                </p>
+
+            <div class="image-container">
+                <img src="./images/aaaaa.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            
+        </div>
+        </dialog>
+
+
+        
+    <dialog  id="ultravioleta" class="abc">
+        <i style="color: white;" class="fa-solid fa-x fechar" onclick="close_dialog(estado)"></i>
+        <h2 style="color: white;">Ultravioleta</h2>
+        <div class="topic">
+            <p><strong>Que ondas são essas ondas:</strong>As ondas ultravioletas (UV) são um tipo de radiação eletromagnética com comprimentos de onda entre 10 nm e 400 nm, localizadas entre a luz visível e os raios-X no espectro eletromagnético. Apesar de invisíveis aos olhos humanos, essas ondas são altamente energéticas e têm um papel significativo em processos biológicos e tecnológicos.
+
+            </p>
+            <div class="image-container">
+                <img src="./images/pele.png" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            <p><strong>Como funcionam:</strong>As ondas UV são emitidas principalmente pelo sol e algumas fontes artificiais, como lâmpadas UV. Quando interagem com a matéria, podem causar excitação de moléculas e átomos, quebrar ligações químicas e produzir reações fotoquímicas. Por exemplo, as ondas UV são responsáveis pela produção de vitamina D na pele e pela destruição de microorganismos em processos de esterilização. </p>
+            <div class="image-container">
+                <img src="./images/pele_uvs.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            <p><strong>Porque é utilizada:</strong>As ondas ultravioletas são amplamente usadas devido à sua alta energia, o que as torna eficazes para esterilização, desinfecção de água e superfícies, e na purificação de ar. Na medicina, são usadas em tratamentos de pele e diagnósticos. Além disso, são empregadas em lâmpadas fluorescentes, análise de materiais e em aplicações de segurança, como a detecção de marcas d’água em documentos e notas.
+
+
+
+            </p>
+            <div class="image-container">
+                <img src="./images/atmosfera.png" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            <p><strong>Onde encontramos:</strong>As ondas UV são encontradas naturalmente na luz solar, sendo responsáveis por fenômenos como bronzeamento e queimaduras de pele. Também estão presentes em dispositivos artificiais, como lâmpadas UV usadas em câmaras de bronzeamento, esterilizadores e equipamentos médicos. Além disso, são utilizadas em laboratórios para análise química e biológica, bem como em tecnologia para aumentar a eficiência de alguns processos industriais e eletrônicos.
+
+
+
+
+
+
+            </p>
+
+            <div class="image-container">
+                <img src="./images/sol.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+                <img src="./images/emissao_solar.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            
+        </div>
+        </dialog>
+
+
+        
+    <dialog  id="raiox" class="abc">
+        <i class="fa-solid fa-x fechar" onclick="close_dialog(estado)"></i>
+        <h2 style="color: black;">Raio-x</h2>
+        <div class="topic">
+            <p><strong>Que ondas são essas ondas:</strong>Os raios-X são um tipo de radiação eletromagnética com comprimentos de onda extremamente curtos, variando entre 0,01 nm e 10 nm. Eles possuem alta energia e estão localizados no espectro eletromagnético entre as ondas ultravioleta e os raios gama. Devido à sua capacidade de penetrar diversos materiais, são amplamente utilizados em áreas científicas e médicas. </p>
+            <div class="image-container">
+                <img src="./images/mao_raio.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            <p><strong>Como funcionam:</strong>Os raios-X são gerados quando elétrons altamente energéticos colidem com um alvo metálico ou mudam abruptamente de direção. Ao interagir com a matéria, podem ser absorvidos ou dispersos dependendo da densidade do material. Essa propriedade é o que permite a criação de imagens em radiografias, onde tecidos mais densos, como ossos, bloqueiam mais raios-X, aparecendo como áreas claras na imagem.</p>
+            <div class="image-container">
+                <img src="./images/raiosxx.jfif" alt=Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            <p><strong>Porque é utilizada:</strong>Os raios-X são usados devido à sua capacidade única de penetrar materiais densos e revelar estruturas internas sem a necessidade de intervenção invasiva. Na medicina, são essenciais para diagnósticos como fraturas, tumores e doenças pulmonares. Na indústria, são empregados em inspeções de materiais e na segurança para verificar conteúdos de bagagens e contêineres. Também têm aplicação em pesquisas científicas, como análise de cristais e exploração espacial.
+
+            </p>
+            <div class="image-container">
+                <img src="./images/maquina_raiox.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            <p><strong>Onde encontramos:</strong>Os raios-X estão presentes em equipamentos de radiografia em hospitais, scanners de segurança em aeroportos e dispositivos industriais para inspeção de qualidade. Além disso, são emitidos por fontes naturais, como estrelas e buracos negros, sendo observados por telescópios especializados no espaço. Eles também são gerados em aceleradores de partículas para experimentos científicos avançados.</p>
+
+            <div class="image-container">
+                <img src="./images/medicina.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+                <img src="./images/radiografia.jfif" alt="Ondas de rádio sendo emitidas por uma antena">
+            </div>
+            
+        </div>
+    </dialog>
+    
+    <dialog style="background: linear-gradient(to right, #00FF00, #32CD32, #228B22);" id="raiogama" class="abc">
+        <i class="fa-solid fa-x fechar" onclick="close_dialog()"></i>
+        <h2 style="color: black;">Raios Gama</h2>
+        <div class="topic">
+            <p><strong>O que são:</strong> Os raios gama são radiações eletromagnéticas com o menor comprimento de onda e as maiores energias no espectro eletromagnético. Eles são gerados em reações nucleares, decaimento radioativo e eventos cósmicos como explosões estelares.</p>
+            <div class="image-container">
+                <img src="./images/gama.png" alt="Representação de raios gama">
+            </div>
+            <p><strong>Como funcionam:</strong> São emitidos por núcleos atômicos instáveis ou por interações de partículas subatômicas altamente energéticas. Quando interagem com a matéria, podem ionizar átomos e penetrar profundamente em diversos materiais, tornando-os úteis em aplicações médicas e industriais.</p>
+            <div class="image-container">
+                <img src="./images/penetração.jfif" alt="Interação de raios gama com a matéria">
+            </div>
+            <p><strong>Por que são utilizados:</strong> Sua alta energia e capacidade de penetração os tornam essenciais em terapias contra o câncer (radioterapia), esterilização de equipamentos médicos e alimentos, e em observações astronômicas, para estudar fenômenos de alta energia no universo.</p>
+            <div class="image-container">
+                <img src="./images/espaco.jfif" alt="Uso de raios gama na radioterapia">
+            </div>
+            <p><strong>Onde encontramos:</strong> Estão presentes em decaimentos radioativos naturais, em equipamentos médicos como aceleradores lineares, e em observatórios espaciais, como os telescópios de raios gama. Também são gerados em reatores nucleares e explosões cósmicas como supernovas.</p>
+            <div class="image-container">
+                <img src="./images/radioterapia.jfif" alt="Explosão de raios gama no espaço">
+            </div>
+        </div>
+    </dialog>
+    
+
+        
     <script src="js/script.js"></script>
 </body>
 </html>
